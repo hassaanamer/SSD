@@ -37,7 +37,7 @@ tar xvf VOCtrainval_11-May-2012.tar
 * MobilenetV2
 
 ## Installation:
-[Conda Environment](https://drive.google.com/open?id=1CRqwv78Phu6uaFNbRPTNiE3IwdHZBi1Q)
+Conda Environment [Download](https://drive.google.com/open?id=1CRqwv78Phu6uaFNbRPTNiE3IwdHZBi1Q)
 
 ## Single GPU:
 ```
