@@ -5,19 +5,24 @@ Deep learning with hardware efficiency. Experimenting with different models for 
 * [Coco](http://cocodataset.org/#download)
 
 * PASCAL VOC
-
+```
 wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar
-
+```
+```
 tar xvf VOCtest_06-Nov-2007.tar
-
+```
+```
 wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar
-
+```
+```
 tar xvf VOCtrainval_06-Nov-2007.tar
-
+```
+```
 wget http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
-
+```
+```
 tar xvf VOCtrainval_11-May-2012.tar
-
+```
 * [UA-Detrac](http://detrac-db.rit.albany.edu/download)
   - [Train](https://drive.google.com/open?id=1_9ka5OmpQ7XPFndgcJnJp-59B74rp2u5)
   - [Test](https://drive.google.com/file/d/1cJsle-JCYZ8fXf7dEzxRuLXryrXEHRgW/view?usp=sharing)
