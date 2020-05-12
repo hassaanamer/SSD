@@ -1,0 +1,22 @@
+MODEL:
+  NUM_CLASSES: 4
+  BOX_PREDICTOR: 'SSDLiteBoxPredictor'
+  BACKBONE:
+    NAME: 'efficient_net-b0'
+    OUT_CHANNELS: (40, 112, 320, 256, 256, 256)
+  PRIORS:
+    MIN_SIZES: [15, 54, 93, 132, 171, 210]
+    MAX_SIZES: [111, 162, 213, 264, 315, 300]
+INPUT:
+  IMAGE_SIZE: 300
+DATASETS:
+  TRAIN: ("ua_train_subsample",)
+  TEST: ("ua_test_subsample", )
+SOLVER:
+  MAX_ITER: 1000000
+  LR_STEPS: [105000, 135000]
+  GAMMA: 0.1
+  BATCH_SIZE: 32
+  LR: 1e-3
+
+OUTPUT_DIR: 'outputs/efficient_net_b0_ssd300_ua_custom_anchor_settings_subsample_v1'
