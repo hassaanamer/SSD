@@ -36,3 +36,10 @@ tar xvf VOCtrainval_11-May-2012.tar
 * EfficientNet
 * MobilenetV2
 
+## Single GPU:
+python train.py --config-file configs/mobilenet_v2_ssd320_ua_custom_anchor_settings.yaml
+
+## Multiple GPUs:
+export NGPUS=4
+python -m torch.distributed.launch --nproc_per_node=$NGPUS train.py --config-file configs/mobilenet_v2_ssd320_ua_custom_anchor_settings.yaml 
+
