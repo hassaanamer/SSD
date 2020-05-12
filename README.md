@@ -4,6 +4,13 @@ Deep learning with hardware efficiency. Experimenting with different models for 
 ## Datasets Supported:
 * Coco
 * PASCAL VOC
+
+tar xvf VOCtest_06-Nov-2007.tar
+
+tar xvf VOCtrainval_06-Nov-2007.tar
+
+tar xvf VOCtrainval_11-May-2012.tar
+
 * UA-Detrac
   - [Train](https://drive.google.com/open?id=1_9ka5OmpQ7XPFndgcJnJp-59B74rp2u5)
   - [Test](https://drive.google.com/file/d/1cJsle-JCYZ8fXf7dEzxRuLXryrXEHRgW/view?usp=sharing)
