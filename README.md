@@ -7,20 +7,10 @@ Deep learning with hardware efficiency. Experimenting with different models for 
 * PASCAL VOC
 ```
 wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar
-```
-```
 tar xvf VOCtest_06-Nov-2007.tar
-```
-```
 wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar
-```
-```
 tar xvf VOCtrainval_06-Nov-2007.tar
-```
-```
 wget http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
-```
-```
 tar xvf VOCtrainval_11-May-2012.tar
 ```
 * [UA-Detrac](http://detrac-db.rit.albany.edu/download)
@@ -50,3 +40,16 @@ export NGPUS=4
 ```
 python -m torch.distributed.launch --nproc_per_node=$NGPUS train.py --config-file configs/mobilenet_v2_ssd320_ua_custom_anchor_settings.yaml 
 ```
+## Results:
+
+### UA Detrac
+| Model variations | Number of parameters (M) | Mean AP50 | Mean AP50 car | Mean AP50 bus | Mean AP50 van | Small Mean AP |
+|       :---:      |     :---:      |     :---:     |     :---:     |     :---:     |     :---:     |    :---:   |
+| EfficentNetSSDLite300   | 4.66     | 0.602    |0.66    |0.759    |0.387      |0.033      |
+| MobileNetV2SSDLite320   | 3.05     | 0.406    |0.494   |0.532    |0.191      |0.011      |
+
+### UA Detrac subset
+| Model variations | Number of parameters (M) | Mean AP50 | Mean AP50 car | Mean AP50 bus | Mean AP50 van | Small Mean AP |
+|       :---:      |     :---:      |     :---:     |     :---:     |     :---:     |     :---:     |    :---:   |
+| EfficentNetSSDLite300   | 4.66     | 0.627    |0.748    |0.827   |0.307     |0.049      |
+| MobileNetV2SSDLite320   | 3.05     | 0.490    |0.538   |0.703    |0.230      |0.004     |
