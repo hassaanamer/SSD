@@ -7,6 +7,7 @@ Deep learning with hardware efficiency. Experimenting with different models for 
 * UA-Detrac
 * UA-Detrac Subset (temporal subsampling 1/10 in training, 1/40 in testing):
   - [Train](https://drive.google.com/open?id=18yNRIxRzhdMG14IjkFRyRgIu9i48iTGS)
+  - [Test](https://drive.google.com/open?id=1JUGbdARG8SIJnjHg_Glpak_uJmSM7iB_)
 * GRAM-RTM
 * GRAM-RTM Subset M-30
 
