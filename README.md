@@ -10,4 +10,6 @@ Deep learning with hardware efficiency. Experimenting with different models for 
 * GRAM-RTM Subset M-30
 
 ## Backbones Supported:
+* EfficientNet
+* MobilenetV2
 
